@@ -98,7 +98,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -132,7 +132,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -171,6 +171,10 @@ Variation3=Designator=R36|UniqueId=\UMNSAXOC\JEHDOHGX|Kind=1|AlternatePart=
 Variation4=Designator=R37|UniqueId=\UMNSAXOC\JBOZZGXW|Kind=1|AlternatePart= 
 Variation5=Designator=R43|UniqueId=\UMNSAXOC\AOGGCEDU|Kind=1|AlternatePart= 
 ParamVariationCount=0
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Battery_PSU\Design Rule Check - psu.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -1098,16 +1102,10 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=kalios.SchLib
-ComponentDesignItemID0=LED
-ComponentSymbolReference0=LED
+ComponentDesignItemID0=AP64350
+ComponentSymbolReference0=AP64350
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
-ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=kalios.SchLib
-ComponentDesignItemID1=MCU/ATSAMD20E14A-MUT
-ComponentSymbolReference1=MCU/ATSAMD20E14A-MUT
-ComponentUpdate1=1
-ComponentIsDeviceSheet1=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1136,11 +1134,8 @@ ParameterUpdate5=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=QFN32_5X5MC_MCH
+ModelName0=SOIC8-POWER_PAD
 ModelUpdate0=1
-ModelType1=PCBLIB
-ModelName1=SM/LED0603
-ModelUpdate1=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
