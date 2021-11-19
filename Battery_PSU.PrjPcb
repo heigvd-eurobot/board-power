@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=Project Outputs for Battery_PSU
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -160,7 +160,24 @@ GenerateClassCluster=0
 DocumentUniqueId=UJNXOSWN
 
 [Document8]
-DocumentPath=Job.OutJob
+DocumentPath=.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -190,7 +207,111 @@ Variation5=Designator=R43|UniqueId=\UMNSAXOC\AOGGCEDU|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
+DocumentPath=Project Outputs for Battery_PSU\BOM\Bill of Materials-.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument2]
 DocumentPath=Project Outputs for Battery_PSU\Design Rule Check - psu.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu.REP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Copper_Signal_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Copper_Signal_2.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Drawing_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Drillmap_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Keep-out.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Mechanical_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Mechanical_11.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Mechanical_13.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Mechanical_15.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_NPTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Pads_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Pads_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_PTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for Battery_PSU\GerberX2\psu_Soldermask_Top.gbr
 DItemRevisionGUID=
 
 [Configuration1]
@@ -204,7 +325,7 @@ ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
 
 [Generic_EDE]
-OutputDir=Project Outputs for Battery_PSU
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1122,8 +1243,8 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=kalios.SchLib
-ComponentDesignItemID0=AP64350
-ComponentSymbolReference0=AP64350
+ComponentDesignItemID0=MCU/ATSAMD20E14A-MUT
+ComponentSymbolReference0=MCU/ATSAMD20E14A-MUT
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1154,7 +1275,7 @@ ParameterUpdate5=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=SOIC8-POWER_PAD
+ModelName0=QFN32_5X5MC_MCH
 ModelUpdate0=1
 
 [DatabaseUpdateOptions]
