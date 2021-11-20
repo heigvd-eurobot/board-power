@@ -10,5 +10,5 @@ different power supplies generated from a DJI Mavic2 battery (15.5V):
 I2C Qwiic connectors can control the output voltages and monitor the flowing current. An emergency 
 switch connector will shut down all power voltages. 
 
-![view](Assets/3D Top.png)
+![3D View](Assets/3D-Top.png)
   
