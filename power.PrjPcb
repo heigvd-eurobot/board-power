@@ -390,20 +390,20 @@ DocumentPath=Project Outputs for power\GerberX2\psu_Soldermask_Top.gbr
 DItemRevisionGUID=
 
 [Parameter1]
-Name=ProjectAuthor
-Value=Prof. Yves Chevallier
+Name=ProjectRevision
+Value=0.2.0
 
 [Parameter2]
-Name=ProjectiAi
-Value=CRH2021-POWER
-
-[Parameter3]
 Name=ProjectNumber
 Value=165465
 
+[Parameter3]
+Name=ProjectiAi
+Value=CRH2021-POWER
+
 [Parameter4]
-Name=ProjectRevision
-Value=0.1.0
+Name=ProjectAuthor
+Value=Prof. Yves Chevallier
 
 [Configuration1]
 Name=Sources
