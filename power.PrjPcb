@@ -1,6 +1,6 @@
 ﻿[Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=4
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -12,8 +12,8 @@ SeparateFolders=0
 TemplateLocationPath=
 PinSwapBy_Netlabel=1
 PinSwapBy_Pin=1
-AllowPortNetNames=0
-AllowSheetEntryNetNames=1
+AllowPortNetNames=1
+AllowSheetEntryNetNames=0
 AppendSheetNumberToLocalNets=0
 NetlistSinglePinNets=0
 DefaultConfiguration=Sources
@@ -23,18 +23,25 @@ DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=0
 PowerPortNamesTakePriority=0
-AutoSheetNumbering=0
+AutoSheetNumbering=1
 AutoCrossReferences=0
+NewIndexingOfSheetSymbols=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=
+OutputPath=Project Outputs for power
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
+CrossRefSheetStyle=1
+CrossRefLocationStyle=1
+CrossRefPorts=3
+CrossRefCrossSheets=1
+CrossRefSheetEntries=0
+CrossRefFollowFromMainSettings=1
 
 [Preferences]
 PrefsVaultGUID=
@@ -126,40 +133,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document6]
-DocumentPath=..\..\..\..\..\eda\altium\Library\kalios.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=HTSAFVWQ
-
-[Document7]
-DocumentPath=..\..\..\..\..\eda\altium\Library\kalios.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=UJNXOSWN
-
-[Document8]
 DocumentPath=.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -176,7 +149,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document7]
 DocumentPath=.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -193,7 +166,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document8]
 DocumentPath=Realistic View.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -210,7 +183,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document9]
 DocumentPath=View Top.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -227,7 +200,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document10]
 DocumentPath=View Bottom.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -244,8 +217,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
-DocumentPath=psu1.PcbLib
+[Document11]
+DocumentPath=power.PvLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -259,7 +232,58 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DFCHTFLF
+DocumentUniqueId=
+
+[Document12]
+DocumentPath=power.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TUJYPKWD
+
+[Document13]
+DocumentPath=power.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ARBFNBNX
+
+[Document14]
+DocumentPath=Stackup.PCBDwf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for power\BOM\Bill of Materials-.xlsx
@@ -302,108 +326,144 @@ DocumentPath=Project Outputs for power\ExportSTEP\psu.step
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_1.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Board.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_2.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Board_Shape.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_Bot.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Plane_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_Top.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Plane_2.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for power\GerberX2\psu_Drawing_1.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for power\GerberX2\psu_Drillmap_1.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_2.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for power\GerberX2\psu_Keep-out.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_3.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for power\GerberX2\psu_Legend_Bot.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_4.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for power\GerberX2\psu_Legend_Top.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_1.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Copper_Signal_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_11.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Drawing_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_13.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Drillmap_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_15.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Keep-out.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for power\GerberX2\psu_NPTH_Drill.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Legend_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for power\GerberX2\psu_Pads_Bot.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Legend_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for power\GerberX2\psu_Pads_Top.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for power\GerberX2\psu_Paste_Bot.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_11.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs for power\GerberX2\psu_Paste_Top.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_13.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs for power\GerberX2\psu_Profile.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Mechanical_15.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs for power\GerberX2\psu_PTH_Drill.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_NPTH_Drill.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=Project Outputs for power\GerberX2\psu_Soldermask_Bot.gbr
+DocumentPath=Project Outputs for power\GerberX2\psu_Pads_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument32]
+DocumentPath=Project Outputs for power\GerberX2\psu_Pads_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for power\GerberX2\psu_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for power\GerberX2\psu_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for power\GerberX2\psu_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for power\GerberX2\psu_PTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for power\GerberX2\psu_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument38]
 DocumentPath=Project Outputs for power\GerberX2\psu_Soldermask_Top.gbr
 DItemRevisionGUID=
 
+[GeneratedDocument39]
+DocumentPath=Project Outputs for power\GerberX2\psu_Top_3D_Body.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for power\GerberX2\psu_Top_Assembly.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for power\GerberX2\psu_Top_Courtyard.gbr
+DItemRevisionGUID=
+
 [Parameter1]
-Name=ProjectRevision
-Value=0.2.0
+Name=ProjectAuthor
+Value=Prof. Yves Chevallier
 
 [Parameter2]
+Name=ProjectiAi
+Value=CRH2022-PWR
+
+[Parameter3]
 Name=ProjectNumber
 Value=165465
 
-[Parameter3]
-Name=ProjectiAi
-Value=CRH2021-POWER
-
 [Parameter4]
-Name=ProjectAuthor
-Value=Prof. Yves Chevallier
+Name=ProjectRevision
+Value=0.3.0
 
 [Configuration1]
 Name=Sources
@@ -416,7 +476,7 @@ ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for power
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -707,6 +767,20 @@ OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration1_Name1=ColumnNameFormat
+Configuration1_Item1=CaptionAsName
+Configuration1_Name2=ForceUpdateSettings
+Configuration1_Item2=False
+Configuration1_Name3=General
+Configuration1_Item3=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=True|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1920|FormHeight=1154|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration1_Name4=GroupOrder
+Configuration1_Item4=Footprint=True|Supplier Part Number 1=True|Value=True
+Configuration1_Name5=SortOrder
+Configuration1_Item5=Designator=Up|Comment=Up|Footprint=Up
+Configuration1_Name6=VisibleOrder
+Configuration1_Item6=Comment=246|Description=120|Designator=120|Footprint=120|LibRef=120|Quantity=120|Supplier Part Number 1=100|Value=100
+Configuration1_Name7=VisibleOrder_Flat
+Configuration1_Item7=Comment=246|Description=120|Designator=120|Footprint=120|LibRef=120|Quantity=120|Supplier Part Number 1=100|Value=100
 OutputType2=ComponentCrossReference
 OutputName2=Component Cross Reference Report
 OutputDocumentPath2=
@@ -1286,6 +1360,7 @@ Type122=2
 Type123=1
 Type124=1
 Type125=1
+Type126=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -1334,8 +1409,8 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=kalios.SchLib
-ComponentDesignItemID0=MCU/ATSAMD20E14A-MUT
-ComponentSymbolReference0=MCU/ATSAMD20E14A-MUT
+ComponentDesignItemID0=UCS2114T-1-V
+ComponentSymbolReference0=UCS2114T-1-V
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1363,10 +1438,12 @@ ParameterName4=Supplier 1
 ParameterUpdate4=1
 ParameterName5=Supplier Part Number 1
 ParameterUpdate5=1
+ParameterName6=Value
+ParameterUpdate6=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=QFN32_5X5MC_MCH
+ModelName0=IC_UCS2114-1-V/LX
 ModelUpdate0=1
 
 [DatabaseUpdateOptions]
@@ -1374,6 +1451,21 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+
+[NetInfos]
+Net1=NetName=+12V|NetColor=clYellow
+Net2=NetName=+3.3V|NetColor=$000083FD
+Net3=NetName=+5V|NetColor=$00FF6EFF
+Net4=NetName=+5VINT|NetColor=$00FF6EFF
+Net5=NetName=+VMAIN|NetColor=$00FF39BC
+Net6=NetName=NetC20_2|NetColor=$00FF39BC
+Net7=NetName=NetC8_1|NetColor=$00FF39BC
+Net8=NetName=NetD4_1|NetColor=clYellow
+Net9=NetName=NetD5_1|NetColor=$00FF39BC
+Net10=NetName=NetD6_1|NetColor=$00FF39BC
+Net11=NetName=NetD7_1|NetColor=$00FF6EFF
+Net12=NetName=NetQ7_5|NetColor=$00FF39BC
+Net13=NetName=VEXT|NetColor=$000083FD
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
@@ -1385,4 +1477,7 @@ ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Us
 
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+
+[Parameter Manager Custom Column Order]
+<Schematic>=Value,Color,Dielectric,Imax,Isat,"Parameter 1",Rs,"Supplier 1","Supplier 2","Supplier 2 Part Number","Supplier Part Number 1",Voltage
 

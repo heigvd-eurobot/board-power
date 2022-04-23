@@ -50,7 +50,7 @@ Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowPr
 OutputType2=PCB Print
 OutputName2=PCB Top
 OutputCategory2=Documentation
-OutputDocumentPath2=psu.PcbDoc
+OutputDocumentPath2=
 OutputVariantName2=
 OutputEnabled2=0
 OutputEnabled2_OutputMedium1=0
@@ -83,23 +83,21 @@ PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 Configuration3_Name1=ColumnNameFormat
 Configuration3_Item1=CaptionAsName
 Configuration3_Name2=General
-Configuration3_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=True|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=CHF|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration3_Item2=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=True|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1732|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=CHF|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=2|UseDirectApi=False|BomSetName=
 Configuration3_Name3=GroupOrder
 Configuration3_Item3=
-Configuration3_Name4=SortOrder
-Configuration3_Item4=Description=Up|Designator=Up
-Configuration3_Name5=VisibleOrder
-Configuration3_Item5=Line #=54|Comment=144|Description=82|Designator=80|Quantity=67|Footprint=72|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
-Configuration3_Name6=VisibleOrder_Base
-Configuration3_Item6=Line #=54|Comment=144|Description=82|Designator=80|Quantity=67|Footprint=72|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
-Configuration3_Name7=VisibleOrder_Consolidated
-Configuration3_Item7=Line #=100|Comment=100|Description=100|Designator=100|Quantity=100|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122|Quantity@Default_Battery_PSU=100|Price@Default_Battery_PSU=100
-Configuration3_Name8=VisibleOrder_Flat
-Configuration3_Item8=Line #=100|Comment=100|Description=100|Designator=100|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
+Configuration3_Name4=VisibleOrder
+Configuration3_Item4=Line #=100|Designator=100|Value=100|Quantity=100|Manufacturer 1=102|Manufacturer Part Number 1=169|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127
+Configuration3_Name5=VisibleOrder_Base
+Configuration3_Item5=Line #=54|Comment=144|Description=82|Designator=80|Quantity=67|Footprint=159|Manufacturer 1=102|Manufacturer Part Number 1=169|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122|Value=100|Status=100
+Configuration3_Name6=VisibleOrder_Consolidated
+Configuration3_Item6=Line #=100|Designator=100|Value=100|Quantity=100|Manufacturer 1=102|Manufacturer Part Number 1=169|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127
+Configuration3_Name7=VisibleOrder_Flat
+Configuration3_Item7=Line #=54|Comment=144|Description=82|Designator=80|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
 OutputType4=Gerber X2
 OutputName4=Gerber X2 Files
 OutputCategory4=Fabrication
-OutputDocumentPath4=psu.PcbDoc
+OutputDocumentPath4=
 OutputVariantName4=
 OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
@@ -108,11 +106,11 @@ OutputEnabled4_OutputMedium3=2
 OutputEnabled4_OutputMedium4=0
 OutputDefault4=0
 Configuration4_Name1=OutputConfigurationParameter1
-Configuration4_Item1=FileComment= |FileSubject=Autodetect|GenerateDRCRulesFile=True|GerberUnit=Metric|MinusApertureTolerance=39|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|PlotBackDrillingPairs=False|PlotBlindViasPairs=False|PlotBoardProfile=True|PlotDrillDrawingPair0_Backdrill=False|PlotDrillDrawingPair0_DrillType=Regular|PlotDrillDrawingPair0_HighLayer=Bottom Layer|PlotDrillDrawingPair0_LowLayer=Top Layer|PlotDrillDrawingPairs=False|PlotDrillGuidePair0_Backdrill=False|PlotDrillGuidePair0_DrillType=Regular|PlotDrillGuidePair0_HighLayer=Bottom Layer|PlotDrillGuidePair0_LowLayer=Top Layer|PlotDrillGuidePairs=False|PlotMicroViasPairs=False|PlotNPTHPair0_Backdrill=False|PlotNPTHPair0_DrillType=Regular|PlotNPTHPair0_HighLayer=Top Layer|PlotNPTHPair0_LowLayer=Bottom Layer|PlotNPTHPairs=False|PlotPTHPair0_Backdrill=False|PlotPTHPair0_DrillType=Regular|PlotPTHPair0_HighLayer=Top Layer|PlotPTHPair0_LowLayer=Bottom Layer|PlotPTHPairs=False|PlotX2.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16777217~1,16908301~1,16777219~1,16973831~1,16908299~1,16973849~1,16973835~1,16973833~1,16973830~1,16973832~1,16842751~1,16908289~1,16973834~1,16777218~1,16973837~1,16973848~1,16908303~1|PlusApertureTolerance=39|Record=GerberX2View|Sorted=False|DocumentPath=psu.PcbDoc
+Configuration4_Item1=FileComment= |FileSubject=Autodetect|GenerateDRCRulesFile=True|GenerateReports=True|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=True|MinusApertureTolerance=39|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|PlotBackDrillingPairs=False|PlotBlindViasPairs=False|PlotBoardProfile=True|PlotCounterHolesPairs=True|PlotDrillDrawingPair0_Backdrill=False|PlotDrillDrawingPair0_DrillType=Regular|PlotDrillDrawingPair0_HighLayer=Bottom Layer|PlotDrillDrawingPair0_LowLayer=Top Layer|PlotDrillDrawingPairs=False|PlotDrillGuidePair0_Backdrill=False|PlotDrillGuidePair0_DrillType=Regular|PlotDrillGuidePair0_HighLayer=Bottom Layer|PlotDrillGuidePair0_LowLayer=Top Layer|PlotDrillGuidePairs=False|PlotMicroViasPairs=False|PlotNPTHPair0_Backdrill=False|PlotNPTHPair0_DrillType=Regular|PlotNPTHPair0_HighLayer=Top Layer|PlotNPTHPair0_LowLayer=Bottom Layer|PlotNPTHPairs=False|PlotPTHPair0_Backdrill=False|PlotPTHPair0_DrillType=Regular|PlotPTHPair0_HighLayer=Top Layer|PlotPTHPair0_LowLayer=Bottom Layer|PlotPTHPairs=False|PlotX2.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16777217~1,16777219~1,16973831~1,16908299~1,16973835~1,16973833~1,16973830~1,16973832~1,16842751~1,16908289~1,16973834~1,16777218~1,16842754~1,16842753~1,16777221~1,16777220~1|PlusApertureTolerance=39|Record=GerberX2View|Sorted=False|DocumentPath=D:\Dropbox\work\heig-vd\teaching\rbt\eda\power\psu.PcbDoc
 OutputType5=Drill
 OutputName5=Drill Drawing/Guides
 OutputCategory5=Fabrication
-OutputDocumentPath5=psu.PcbDoc
+OutputDocumentPath5=
 OutputVariantName5=
 OutputEnabled5=0
 OutputEnabled5_OutputMedium1=0
@@ -151,7 +149,7 @@ PcbPrintPreferences5=
 OutputType6=Assembly
 OutputName6=Assembly Drawings
 OutputCategory6=Assembly
-OutputDocumentPath6=psu.PcbDoc
+OutputDocumentPath6=
 OutputVariantName6=
 OutputEnabled6=0
 OutputEnabled6_OutputMedium1=0
@@ -230,7 +228,7 @@ PcbPrintPreferences6=SubsititueFont_Default=True|SubsititueFont_Serif=True|Subsi
 OutputType7=PCB Print
 OutputName7=PCB Bottom
 OutputCategory7=Documentation
-OutputDocumentPath7=psu.PcbDoc
+OutputDocumentPath7=
 OutputVariantName7=
 OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
@@ -327,29 +325,29 @@ PcbPrintPreferences11=SubsititueFont_Default=True|SubsititueFont_Serif=True|Subs
 OutputType12=PCB 3D Print
 OutputName12=PCB 3D Print Top
 OutputCategory12=Documentation
-OutputDocumentPath12=psu.PcbDoc
+OutputDocumentPath12=
 OutputVariantName12=
 OutputEnabled12=1
 OutputEnabled12_OutputMedium1=0
 OutputEnabled12_OutputMedium2=8
-OutputEnabled12_OutputMedium3=6
+OutputEnabled12_OutputMedium3=5
 OutputEnabled12_OutputMedium4=0
 OutputDefault12=0
-PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=3.12|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=3.13|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration12_Name1=OutputConfigurationParameter1
 Configuration12_Item1=Record=Pcb3DPrintView|ResX=600|ResY=600|ViewX=37501875|ViewY=22934946|LookAtX=37362204|LookAtY=30078740|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=2.95985200739963E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ScreenWidth=0|ScreenHeight=0|ImageOutputType=1|ViewConfig= |DocumentPath=psu.PcbDoc
 OutputType13=PCB 3D Print
 OutputName13=PCB 3D Print Bottom
 OutputCategory13=Documentation
-OutputDocumentPath13=psu.PcbDoc
+OutputDocumentPath13=
 OutputVariantName13=
 OutputEnabled13=1
 OutputEnabled13_OutputMedium1=0
 OutputEnabled13_OutputMedium2=9
-OutputEnabled13_OutputMedium3=7
+OutputEnabled13_OutputMedium3=6
 OutputEnabled13_OutputMedium4=0
 OutputDefault13=0
-PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=3.12|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=3.13|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration13_Name1=OutputConfigurationParameter1
 Configuration13_Item1=Record=Pcb3DPrintView|ResX=600|ResY=600|ViewX=37501875|ViewY=22934946|LookAtX=37362204|LookAtY=30078740|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=2.95985200739963E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ScreenWidth=0|ScreenHeight=0|ImageOutputType=1|ViewConfig= |DocumentPath=C:\Users\Yves Chevallier\Dropbox\work\heig-vd\teaching\rbt\eda\power\psu.PcbDoc
 OutputType14=PCBDrawing
@@ -367,7 +365,7 @@ PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 OutputType15=PDF3D
 OutputName15=PDF3D
 OutputCategory15=Documentation
-OutputDocumentPath15=psu.PcbDoc
+OutputDocumentPath15=
 OutputVariantName15=
 OutputEnabled15=0
 OutputEnabled15_OutputMedium1=0
@@ -381,7 +379,7 @@ Configuration15_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|
 OutputType16=Design Rules Check
 OutputName16=Design Rules Check
 OutputCategory16=Validation
-OutputDocumentPath16=psu.PcbDoc
+OutputDocumentPath16=
 OutputVariantName16=
 OutputEnabled16=1
 OutputEnabled16_OutputMedium1=0
@@ -409,12 +407,12 @@ Configuration17_Item1=ERCClassColumnOrder=0|ERCClassColumnSort=0|ERCClassColumnV
 OutputType18=ExportSTEP
 OutputName18=Export STEP
 OutputCategory18=Export
-OutputDocumentPath18=psu.PcbDoc
+OutputDocumentPath18=
 OutputVariantName18=
-OutputEnabled18=1
+OutputEnabled18=0
 OutputEnabled18_OutputMedium1=0
 OutputEnabled18_OutputMedium2=0
-OutputEnabled18_OutputMedium3=5
+OutputEnabled18_OutputMedium3=0
 OutputEnabled18_OutputMedium4=0
 OutputDefault18=0
 Configuration18_Name1=OutputConfigurationParameter1
@@ -448,7 +446,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Users\Yves Chevallier\Dropbox\work\heig-vd\teaching\rbt\eda\power\Project Outputs for power\
+OutputFilePath3=D:\Dropbox\work\heig-vd\teaching\rbt\eda\power\Project Outputs for power\
 ReleaseManaged3=1
 OutputBasePath3=Project Outputs for power
 OutputPathMedia3=
@@ -502,7 +500,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=Project Outputs for Free Documents\.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\Users\Yves Chevallier\Dropbox\work\heig-vd\teaching\rbt\eda\power\Project Outputs for power\
+RelativeOutputPath3=D:\Dropbox\work\heig-vd\teaching\rbt\eda\power\Project Outputs for power\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0

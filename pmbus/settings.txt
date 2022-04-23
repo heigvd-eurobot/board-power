@@ -1,0 +1,214 @@
+#LTC PMBus Project Text File Version:1.1
+#Checksum:0x6FEE
+# This File is a text (machine readable) listing of all writable register values
+# in your project (.proj file
+# 
+# NOTE: These comments are included for your benefit.  You may safely remove any line
+# that starts with the character '#'
+# 
+# The format of this file is as follows:
+# 
+# Format Rules that Apply to all Versions:
+#  * The first line of this file will always include a unique identifer indicating 
+#    the particular version of the text file format as a comment line.
+#      Example: '#LTC PMBus Project Text File Version:1.1'
+# Version 1.1 format rules:
+#  * The '#' character denotes a comment that should be ignored by software
+#  * The next comment line (after the mandatory version line) shows the
+#    checksum: 
+#      Example: '#Checksum:0xAFAFAFAF'
+#  * The last comment line before the register values shows the column headers: 
+#      Example: '#7-Bit Address,Page,Write Protocol,Register Command Code,[DataByteHi]DataByteLo,RegisterName'
+#  * Each following line contains the values for one specific register
+# 
+# Examples:
+# 
+# The following line indicates that Global Register VIN_OV_FAULT_RESPONSE_GLOBAL of the
+# device at 7-bit I2C address 0x5C should be written using the Write Byte(WB)
+# protocol with the command code 0x56 and the data byte 0x00
+# 
+# #7-Bit Address,Page,Write Protocol,Register Command Code,[DataByteHi]DataByteLo,RegisterName
+# 0x5C,-1,WB,0x56,0x00,VIN_OV_FAULT_RESPONSE_GLOBAL
+# 
+# NOTE: The I2C transaction your software would generate is as follows:
+#  * <StartCondition>
+#  * 0xB8 (7-bit I2C address 0x5C with the write bit set 101 1100-0)
+#  * 0x56 (The 8-bit command code for the register VIN_OV_FAULT_RESPONSE_GLOBAL)
+#  * 0x00 (the data byte value for VIN_OV_FAULT_RESPONSE_GLOBAL)
+#  * <StopCondition>
+# NOTE: There is no need to set the PAGE register, because this is a global register
+#       as indicated by Page='-1'
+# NOTE: The I2C primitives necessary to execute this 'Write Byte' protocol are
+#       defined in the SMBUS(TM) standard
+# 
+# The following line indicates the paged TON_RISE register for Page 3 of the device
+# at 7-bit I2C address 0x5D should be written using the Write Word(WW) protocol with
+# the command code 0x61 and the data word 0xDA80 (the low data byte byte is 0x80)
+# 
+# #7-Bit Address,Page,Write Protocol,Register Command Code,[DataByteHi]DataByteLo,RegisterName
+# 0x5D,3,WW,0x61,0xDA80,TON_RISE
+# 
+# NOTE: The I2C transaction you would need to generate to write this to the device is as follows:
+# 
+#  * <StartCondition>
+#  * 0xBA (7-bit I2C address 0x5D with the write bit set 101 1101-0)
+#  * 0x00 (The 8-bit command code for the PAGE register)
+#  * 0x03 (data byte indicating desired Page=3)
+#  * <StopCondition>
+# 
+#  * <StartCondition>
+#  * 0xBA (7-bit I2C address 0x5D with the write bit set 101 1101-0)
+#  * 0x61 (The 8-bit command code for the global register VIN_OV_FAULT_RESPONSE_GLOBAL)
+#  * 0x80 (Lo Data byte representing the desired value for the paged register TON_RISE)
+#  * 0xDA (Hi Data byte representing the desired value for the paged register TON_RISE)
+#  * <StopCondition>
+# 
+# NOTE: The I2C primitives necessary to execute this 'Write Word' protocol are defined in the SMBUS(TM) standard
+# NOTE: The page register only needs to be written when you need to address a different page
+# 
+# 
+# -----------------------------------
+# NOTES ON Checksum Algorithm
+# -----------------------------------
+# The GUI Computes a simple 16-bit checksum for each text file it exports.
+# This checksum is calculated according to the following algorithm:
+# 
+# Initialize the 16-bit Checksum=0
+# For each line of the text file that includes a register value (like the above examples):
+#   Checksum = Checksum + <7-bit address>
+#   Checksum = Checksum + <page>
+#   Checksum = Checksum + <command code>
+#   Checksum = Checksum + <lo data byte>
+#   Checksum = Checksum + <hi data byte> (add 0, or simply skip for single byte values)
+# Checksum = 2's complement of Checksum
+# 
+# How to Verify that the Checksum is Valid when reading a text file:
+# Parse the checksum reported by this file (i.e. Checksum:0xFFFD) -- call this ReportedChecksum
+# Initialize a variable SumOfBytes=0
+# For each line of the text file that includes a register value:
+#   SumOfBytes = SumOfBytes + <7-bit address>
+#   SumOfBytes = SumOfBytes + <page>
+#   SumOfBytes = SumOfBytes + <command code>
+#   SumOfBytes = SumOfBytes + <lo data byte>
+#   SumOfBytes = SumOfBytes + <hi data byte> (add 0, or simply skip for single byte values)
+# If the lowest 16-bits of SumOfBytes + ReportedChecksum == 0, the checksum is good
+# Otherwise the checksum is bad.
+# 
+# For Example: If your SumOfBytes was computed as 0x3 and 
+# the ReportedChecksum in the file was 0xFFFD.
+#   0x3 + 0xFFFD = 0x10000
+#   The lowest 16-bits are 0, so this cheksum is good.
+# 
+# 
+#7-Bit Address,Page,Write Protocol,Register Command Code,[DataByteHi]DataByteLo,RegisterName
+0x00,-1,WB,0x10,0x00,WRITE_PROTECT 
+0x00,-1,WW,0x33,0xFABC,FREQUENCY_SWITCH_LTC3886 
+0x00,-1,WW,0x35,0xD360,VIN_ON 
+0x00,-1,WW,0x36,0xD320,VIN_OFF 
+0x00,-1,WW,0x55,0xDA80,VIN_OV_FAULT_LIMIT 
+0x00,-1,WW,0x58,0xD340,VIN_UV_WARN_LIMIT 
+0x00,-1,WW,0x5D,0xDA80,IIN_OC_WARN_LIMIT 
+0x00,-1,WSM,0x7C,0x00,MASK_STATUS_INPUT 
+0x00,-1,WSM,0x7E,0x00,MASK_STATUS_CML 
+0x00,-1,WW,0xB0,0x0000,USER_DATA_00 
+0x00,-1,WW,0xB2,0x0000,USER_DATA_02 
+0x00,-1,WW,0xB4,0x0000,USER_DATA_04 
+0x00,-1,WB,0xD1,0x61,MFR_CONFIG_ALL_LTC3886 
+0x00,-1,WB,0xE6,0x4F,MFR_ADDRESS_LTC 
+0x00,-1,WW,0xE8,0xC300,MFR_IIN_CAL_GAIN_LTC 
+0x00,-1,WB,0xF5,0x10,MFR_PWM_CONFIG_LTC3886 
+0x00,-1,WW,0xF7,0xC300,MFR_RVIN 
+0x00,0,WB,0x01,0x80,OPERATION 
+0x00,0,WB,0x02,0x1E,ON_OFF_CONFIG 
+0x00,0,WW,0x21,0xC000,VOUT_COMMAND 
+0x00,0,WW,0x24,0xE000,VOUT_MAX 
+0x00,0,WW,0x25,0xC99A,VOUT_MARGIN_HIGH 
+0x00,0,WW,0x26,0xB666,VOUT_MARGIN_LOW 
+0x00,0,WW,0x27,0xAA00,VOUT_TRANSITION_RATE 
+0x00,0,WW,0x38,0xC300,IOUT_CAL_GAIN 
+0x00,0,WW,0x40,0xD333,VOUT_OV_FAULT_LIMIT 
+0x00,0,WB,0x41,0xB8,VOUT_OV_FAULT_RESPONSE 
+0x00,0,WW,0x42,0xCE66,VOUT_OV_WARN_LIMIT 
+0x00,0,WW,0x43,0xB19A,VOUT_UV_WARN_LIMIT 
+0x00,0,WW,0x44,0xACCD,VOUT_UV_FAULT_LIMIT 
+0x00,0,WB,0x45,0xB8,VOUT_UV_FAULT_RESPONSE 
+0x00,0,WW,0x46,0xD300,IOUT_OC_FAULT_LIMIT 
+0x00,0,WB,0x47,0x00,IOUT_OC_FAULT_RESPONSE 
+0x00,0,WW,0x4A,0xD280,IOUT_OC_WARN_LIMIT 
+0x00,0,WW,0x4F,0xEA80,OT_FAULT_LIMIT_PAGED 
+0x00,0,WB,0x50,0xB8,OT_FAULT_RESPONSE_PAGED 
+0x00,0,WW,0x51,0xEA58,OT_WARN_LIMIT_PAGED 
+0x00,0,WW,0x53,0xE580,UT_FAULT_LIMIT_PAGED 
+0x00,0,WB,0x54,0xB8,UT_FAULT_RESPONSE_PAGED 
+0x00,0,WB,0x56,0x80,VIN_OV_FAULT_RESPONSE_PAGED 
+0x00,0,WW,0x60,0x8000,TON_DELAY 
+0x00,0,WW,0x61,0xD200,TON_RISE 
+0x00,0,WW,0x62,0xD280,TON_MAX_FAULT_LIMIT 
+0x00,0,WB,0x63,0xB8,TON_MAX_FAULT_RESPONSE 
+0x00,0,WW,0x64,0x8000,TOFF_DELAY 
+0x00,0,WW,0x65,0xD200,TOFF_FALL 
+0x00,0,WW,0x66,0xF258,TOFF_MAX_WARN_LIMIT 
+0x00,0,WSM,0x7A,0x00,MASK_STATUS_VOUT 
+0x00,0,WSM,0x7B,0x00,MASK_STATUS_IOUT 
+0x00,0,WSM,0x7D,0x00,MASK_STATUS_TEMP 
+0x00,0,WSM,0x80,0x11,MASK_STATUS_MFR_SPECIFIC_LTC388X 
+0x00,0,WW,0xB1,0x84DA,USER_DATA_01 
+0x00,0,WW,0xB3,0x0000,USER_DATA_03 
+0x00,0,WB,0xD0,0x1D,MFR_CHAN_CONFIG_LTC388X 
+0x00,0,WW,0xD2,0x6993,MFR_GPIO__SLASH__FAULT_PROPAGATE_LTC388X 
+0x00,0,WB,0xD3,0x70,MFR_PWM_COMP 
+0x00,0,WB,0xD4,0xC1,MFR_PWM_MODE_LTC3886 
+0x00,0,WB,0xD5,0xC0,MFR_GPIO__SLASH__FAULT_RESPONSE_LTC388X 
+0x00,0,WW,0xDB,0xFABC,MFR_RETRY_DELAY_LTC_PAGED 
+0x00,0,WW,0xDC,0xFBE8,MFR_RESTART_DELAY_LTC_PAGED 
+0x00,0,WW,0xF6,0x0F3C,MFR_IOUT_CAL_GAIN_TC 
+0x00,0,WW,0xF8,0x4000,MFR_TEMP_1_GAIN 
+0x00,0,WW,0xF9,0x8000,MFR_TEMP_1_OFFSET 
+0x00,0,WB,0xFA,0x80,MFR_RAIL_ADDRESS_LTC 
+0x00,1,WB,0x01,0x80,OPERATION 
+0x00,1,WB,0x02,0x1E,ON_OFF_CONFIG 
+0x00,1,WW,0x21,0x5000,VOUT_COMMAND 
+0x00,1,WW,0x24,0x5800,VOUT_MAX 
+0x00,1,WW,0x25,0x5400,VOUT_MARGIN_HIGH 
+0x00,1,WW,0x26,0x4C00,VOUT_MARGIN_LOW 
+0x00,1,WW,0x27,0xAA00,VOUT_TRANSITION_RATE 
+0x00,1,WW,0x38,0xC300,IOUT_CAL_GAIN 
+0x00,1,WW,0x40,0x5800,VOUT_OV_FAULT_LIMIT 
+0x00,1,WB,0x41,0xB8,VOUT_OV_FAULT_RESPONSE 
+0x00,1,WW,0x42,0x5600,VOUT_OV_WARN_LIMIT 
+0x00,1,WW,0x43,0x4A00,VOUT_UV_WARN_LIMIT 
+0x00,1,WW,0x44,0x4800,VOUT_UV_FAULT_LIMIT 
+0x00,1,WB,0x45,0xB8,VOUT_UV_FAULT_RESPONSE 
+0x00,1,WW,0x46,0xD300,IOUT_OC_FAULT_LIMIT 
+0x00,1,WB,0x47,0x00,IOUT_OC_FAULT_RESPONSE 
+0x00,1,WW,0x4A,0xD280,IOUT_OC_WARN_LIMIT 
+0x00,1,WW,0x4F,0xEAD0,OT_FAULT_LIMIT_PAGED 
+0x00,1,WB,0x50,0xB8,OT_FAULT_RESPONSE_PAGED 
+0x00,1,WW,0x51,0xEA58,OT_WARN_LIMIT_PAGED 
+0x00,1,WW,0x53,0xE580,UT_FAULT_LIMIT_PAGED 
+0x00,1,WB,0x54,0xB8,UT_FAULT_RESPONSE_PAGED 
+0x00,1,WB,0x56,0x80,VIN_OV_FAULT_RESPONSE_PAGED 
+0x00,1,WW,0x60,0x8000,TON_DELAY 
+0x00,1,WW,0x61,0xD200,TON_RISE 
+0x00,1,WW,0x62,0xD280,TON_MAX_FAULT_LIMIT 
+0x00,1,WB,0x63,0xB8,TON_MAX_FAULT_RESPONSE 
+0x00,1,WW,0x64,0x8000,TOFF_DELAY 
+0x00,1,WW,0x65,0xD200,TOFF_FALL 
+0x00,1,WW,0x66,0xF258,TOFF_MAX_WARN_LIMIT 
+0x00,1,WSM,0x7A,0x00,MASK_STATUS_VOUT 
+0x00,1,WSM,0x7B,0x00,MASK_STATUS_IOUT 
+0x00,1,WSM,0x7D,0x00,MASK_STATUS_TEMP 
+0x00,1,WSM,0x80,0x11,MASK_STATUS_MFR_SPECIFIC_LTC388X 
+0x00,1,WW,0xB1,0x4A5F,USER_DATA_01 
+0x00,1,WW,0xB3,0x0000,USER_DATA_03 
+0x00,1,WB,0xD0,0x1D,MFR_CHAN_CONFIG_LTC388X 
+0x00,1,WW,0xD2,0x6993,MFR_GPIO__SLASH__FAULT_PROPAGATE_LTC388X 
+0x00,1,WB,0xD3,0x70,MFR_PWM_COMP 
+0x00,1,WB,0xD4,0xC1,MFR_PWM_MODE_LTC3886 
+0x00,1,WB,0xD5,0xC0,MFR_GPIO__SLASH__FAULT_RESPONSE_LTC388X 
+0x00,1,WW,0xDB,0xFABC,MFR_RETRY_DELAY_LTC_PAGED 
+0x00,1,WW,0xDC,0xFBE8,MFR_RESTART_DELAY_LTC_PAGED 
+0x00,1,WW,0xF6,0x0F3C,MFR_IOUT_CAL_GAIN_TC 
+0x00,1,WW,0xF8,0x4000,MFR_TEMP_1_GAIN 
+0x00,1,WW,0xF9,0x8000,MFR_TEMP_1_OFFSET 
+0x00,1,WB,0xFA,0x80,MFR_RAIL_ADDRESS_LTC 

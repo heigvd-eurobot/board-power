@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectConfig formatVersion="1.3.0.0">
+  <Chip addr7bit="0x00" modelnum="LTC3886" moduleIndex="0" subModuleIndex="0" siliconrev="2.0" crc="0xBE0AF028" customerPartNumber="" customerComment="" isTestBench="False" customerReferenceDesignator="">
+    <Global>
+      <Reg cmd="0x0010" hex="0x00" len="1" />
+      <Reg cmd="0x0033" hex="0xFABC" len="2" />
+      <Reg cmd="0x0035" hex="0xD360" len="2" />
+      <Reg cmd="0x0036" hex="0xD320" len="2" />
+      <Reg cmd="0x0055" hex="0xDA80" len="2" />
+      <Reg cmd="0x0058" hex="0xD340" len="2" />
+      <Reg cmd="0x005D" hex="0xDA80" len="2" />
+      <Reg cmd="0x007C" hex="0x00" len="1" />
+      <Reg cmd="0x007E" hex="0x00" len="1" />
+      <Reg cmd="0x00B0" hex="0x0000" len="2" />
+      <Reg cmd="0x00B2" hex="0x0000" len="2" />
+      <Reg cmd="0x00B4" hex="0x0000" len="2" />
+      <Reg cmd="0x00D1" hex="0x61" len="1" />
+      <Reg cmd="0x00E6" hex="0x4F" len="1" />
+      <Reg cmd="0x00E8" hex="0xC300" len="2" />
+      <Reg cmd="0x00F5" hex="0x10" len="1" />
+      <Reg cmd="0x00F7" hex="0xC300" len="2" />
+    </Global>
+    <Page name="U0:0" num="0" customerComment="">
+      <Reg cmd="0x0001" hex="0x80" len="1" />
+      <Reg cmd="0x0002" hex="0x1E" len="1" />
+      <Reg cmd="0x0021" hex="0xC000" len="2" />
+      <Reg cmd="0x0024" hex="0xE000" len="2" />
+      <Reg cmd="0x0025" hex="0xC99A" len="2" />
+      <Reg cmd="0x0026" hex="0xB666" len="2" />
+      <Reg cmd="0x0027" hex="0xAA00" len="2" />
+      <Reg cmd="0x0038" hex="0xC300" len="2" />
+      <Reg cmd="0x0040" hex="0xD333" len="2" />
+      <Reg cmd="0x0041" hex="0xB8" len="1" />
+      <Reg cmd="0x0042" hex="0xCE66" len="2" />
+      <Reg cmd="0x0043" hex="0xB19A" len="2" />
+      <Reg cmd="0x0044" hex="0xACCD" len="2" />
+      <Reg cmd="0x0045" hex="0xB8" len="1" />
+      <Reg cmd="0x0046" hex="0xD300" len="2" />
+      <Reg cmd="0x0047" hex="0x00" len="1" />
+      <Reg cmd="0x004A" hex="0xD280" len="2" />
+      <Reg cmd="0x004F" hex="0xEA80" len="2" />
+      <Reg cmd="0x0050" hex="0xB8" len="1" />
+      <Reg cmd="0x0051" hex="0xEA58" len="2" />
+      <Reg cmd="0x0053" hex="0xE580" len="2" />
+      <Reg cmd="0x0054" hex="0xB8" len="1" />
+      <Reg cmd="0x0056" hex="0x80" len="1" />
+      <Reg cmd="0x0060" hex="0x8000" len="2" />
+      <Reg cmd="0x0061" hex="0xD200" len="2" />
+      <Reg cmd="0x0062" hex="0xD280" len="2" />
+      <Reg cmd="0x0063" hex="0xB8" len="1" />
+      <Reg cmd="0x0064" hex="0x8000" len="2" />
+      <Reg cmd="0x0065" hex="0xD200" len="2" />
+      <Reg cmd="0x0066" hex="0xF258" len="2" />
+      <Reg cmd="0x007A" hex="0x00" len="1" />
+      <Reg cmd="0x007B" hex="0x00" len="1" />
+      <Reg cmd="0x007D" hex="0x00" len="1" />
+      <Reg cmd="0x0080" hex="0x11" len="1" />
+      <Reg cmd="0x00B1" hex="0x84DA" len="2" />
+      <Reg cmd="0x00B3" hex="0x0000" len="2" />
+      <Reg cmd="0x00D0" hex="0x1D" len="1" />
+      <Reg cmd="0x00D2" hex="0x6993" len="2" />
+      <Reg cmd="0x00D3" hex="0x70" len="1" />
+      <Reg cmd="0x00D4" hex="0xC1" len="1" />
+      <Reg cmd="0x00D5" hex="0xC0" len="1" />
+      <Reg cmd="0x00DB" hex="0xFABC" len="2" />
+      <Reg cmd="0x00DC" hex="0xFBE8" len="2" />
+      <Reg cmd="0x00F6" hex="0x0F3C" len="2" />
+      <Reg cmd="0x00F8" hex="0x4000" len="2" />
+      <Reg cmd="0x00F9" hex="0x8000" len="2" />
+      <Reg cmd="0x00FA" hex="0x80" len="1" />
+    </Page>
+    <Page name="U0:1" num="1" customerComment="">
+      <Reg cmd="0x0001" hex="0x80" len="1" />
+      <Reg cmd="0x0002" hex="0x1E" len="1" />
+      <Reg cmd="0x0021" hex="0x5000" len="2" />
+      <Reg cmd="0x0024" hex="0x5800" len="2" />
+      <Reg cmd="0x0025" hex="0x5400" len="2" />
+      <Reg cmd="0x0026" hex="0x4C00" len="2" />
+      <Reg cmd="0x0027" hex="0xAA00" len="2" />
+      <Reg cmd="0x0038" hex="0xC300" len="2" />
+      <Reg cmd="0x0040" hex="0x5800" len="2" />
+      <Reg cmd="0x0041" hex="0xB8" len="1" />
+      <Reg cmd="0x0042" hex="0x5600" len="2" />
+      <Reg cmd="0x0043" hex="0x4A00" len="2" />
+      <Reg cmd="0x0044" hex="0x4800" len="2" />
+      <Reg cmd="0x0045" hex="0xB8" len="1" />
+      <Reg cmd="0x0046" hex="0xD300" len="2" />
+      <Reg cmd="0x0047" hex="0x00" len="1" />
+      <Reg cmd="0x004A" hex="0xD280" len="2" />
+      <Reg cmd="0x004F" hex="0xEAD0" len="2" />
+      <Reg cmd="0x0050" hex="0xB8" len="1" />
+      <Reg cmd="0x0051" hex="0xEA58" len="2" />
+      <Reg cmd="0x0053" hex="0xE580" len="2" />
+      <Reg cmd="0x0054" hex="0xB8" len="1" />
+      <Reg cmd="0x0056" hex="0x80" len="1" />
+      <Reg cmd="0x0060" hex="0x8000" len="2" />
+      <Reg cmd="0x0061" hex="0xD200" len="2" />
+      <Reg cmd="0x0062" hex="0xD280" len="2" />
+      <Reg cmd="0x0063" hex="0xB8" len="1" />
+      <Reg cmd="0x0064" hex="0x8000" len="2" />
+      <Reg cmd="0x0065" hex="0xD200" len="2" />
+      <Reg cmd="0x0066" hex="0xF258" len="2" />
+      <Reg cmd="0x007A" hex="0x00" len="1" />
+      <Reg cmd="0x007B" hex="0x00" len="1" />
+      <Reg cmd="0x007D" hex="0x00" len="1" />
+      <Reg cmd="0x0080" hex="0x11" len="1" />
+      <Reg cmd="0x00B1" hex="0x4A5F" len="2" />
+      <Reg cmd="0x00B3" hex="0x0000" len="2" />
+      <Reg cmd="0x00D0" hex="0x1D" len="1" />
+      <Reg cmd="0x00D2" hex="0x6993" len="2" />
+      <Reg cmd="0x00D3" hex="0x70" len="1" />
+      <Reg cmd="0x00D4" hex="0xC1" len="1" />
+      <Reg cmd="0x00D5" hex="0xC0" len="1" />
+      <Reg cmd="0x00DB" hex="0xFABC" len="2" />
+      <Reg cmd="0x00DC" hex="0xFBE8" len="2" />
+      <Reg cmd="0x00F6" hex="0x0F3C" len="2" />
+      <Reg cmd="0x00F8" hex="0x4000" len="2" />
+      <Reg cmd="0x00F9" hex="0x8000" len="2" />
+      <Reg cmd="0x00FA" hex="0x80" len="1" />
+    </Page>
+  </Chip>
+</ProjectConfig>
